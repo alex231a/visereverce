@@ -7,4 +7,6 @@ def home(request):
 
 
 def reverse(request):
-    return render(request, 'reverse.html')
+    origin_text = request.GET['usertext']
+    reversed_text = origin_text[::-1]
+    return render(request, 'reverse.html', {'origin_test': origin_text, 'reversed_text': reversed_text})
