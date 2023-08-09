@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation</title>
+</head>
+<body>
+    <form action="{% url 'result' %}">
+        <p>Enter first value</p>
+        <input name="val1">
+        <p>Enter second value</p>
+        <input name="val2">
+        <p>Choose action</p>
+        <input type="radio" id="+" name="action" value="+">
+        <label for="+">+</label><br>
+        <input type="radio" id="-" name="action" value="-">
+        <label for="-">-</label><br>
+        <input type="radio" id="*" name="action" value="*">
+        <label for="*">*</label><br>
+        <input type="radio" id="/" name="action" value="/">
+        <label for="/">/</label><br>
+        <br><br>
+        <input type="submit" value="Calculate!">
+    </form>
+</body>
+</html>
