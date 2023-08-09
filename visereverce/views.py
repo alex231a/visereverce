@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'home.html', {'greeting': 'Hi, this is my page'})
+    return render(request, 'home.html')
+
+
+def reverse(request):
+    return render(request, 'reverse.html')
